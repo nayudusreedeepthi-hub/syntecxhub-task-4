@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Login</h2>
+
+  <form onsubmit="loginUser(event)">
+    <input type="email" id="loginEmail" placeholder="Enter Email" required>
+
+    <input type="password" id="loginPassword" placeholder="Enter Password" required>
+
+    <div style="text-align:left; font-size:14px;">
+      <input type="checkbox" onclick="togglePassword()"> Show Password
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <p id="msg" class="error"></p>
+
+  <a href="register.html">Don't have an account? Register</a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyShop Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2 class="logo">MyShop 🛒</h2>
+
+  <input type="text" placeholder="Search products..." class="search" onkeyup="searchProducts()">
+
+  <div class="nav-right">
+    <span id="welcome"></span>
+    <span>🛒 Cart: <span id="cartCount">0</span></span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4 class="product-name">Headphones</h4>
+    <p>₹999</p>
+    <button onclick="addToCart('Headphones')">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4 class="product-name">Shoes</h4>
+    <p>₹1499</p>
+    <button onclick="addToCart('Shoes')">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4 class="product-name">Watch</h4>
+    <p>₹1999</p>
+    <button onclick="addToCart('Watch')">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4 class="product-name">Backpack</h4>
+    <p>₹899</p>
+    <button onclick="addToCart('Backpack')">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4 class="product-name">Mobile</h4>
+    <p>₹12000</p>
+    <button onclick="addToCart('Mobile')">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h4 class="product-name">Laptop</h4>
+    <p>₹55000</p>
+    <button onclick="addToCart('Laptop')">Add to Cart</button>
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
